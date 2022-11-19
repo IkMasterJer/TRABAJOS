@@ -1,0 +1,38 @@
+body{
+    background-color: orange;
+}
+*{
+margin: 0px;
+padding: 0px;
+}
+header, .main, footer{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+header nav {
+    background: red;
+    overflow: hidden;
+}
+header nav ul{
+    list-style: none;/Quita los puntos del <ul>/
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background: black;
+}
+footer{
+    background-color: red;
+    color: #fff;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
