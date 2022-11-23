@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/diseno.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>PROYECTO1</title>
 </head>
 <body>
     <marquee><h1>MI PRIMERA PAGINA WEB</h1></marquee>
     
-    <header>
-        <center><img src="imagen/logohtml.png" alt="sise"  title="html" width="150px"></center>
-        <nav>
-            <ul>
-                <li><a href="inicio.html" title="Ir a pagina de inicio">INICIO</a></li>
+    <header class="cabezera">
+        <center><img src="imagen/bienvenidos.jpg" title="bienvenidos" width="250"></center>
+        
+        <article class="bienvenida">
+            <P>LES DAMOS LA BIENVENIDAD AL SERVICIO DE LIBROS GRATUITOS PARA TODAS LAS PERSONAS QUE LES GUSTE LA LECTURA </P>
+        </article>
+            
+        <nav class="menu">
+            <ul>  
+                <li><a href="inicio.html">INICIO</a></li>
                 <li><a href="nosotros.html">NOSOTROS</a></li>
                 <li><a href="servicios.html">SERVICIOS</a></li>
                 <li><a href="libros.html">LIBROS</a></li>
@@ -23,8 +28,39 @@
         </nav>
     </header>
     <hr>
-    <footer>
-        <p>Jerson Carrasco - Todos los derechos &copy; reservados </p>
+    
+    <section class="cuerpo"> <!--seccion de cuerpo -->
+        
+        <article class="iconos"> <!--seccion de ARTICLE -->
+            <h3>SERVICIOS</h3>
+            <div>
+                <p>ALQUILER</p>
+                <img src="imagen/alquiler.jpg" height="180" title="Alquiler">
+            </div> 
+                
+            <div>
+                <p>PRESTAMO</p>
+                <img src="imagen/prestamo.jpg" height="140" title="Prestamo">
+            </div> 
+    
+            <div>
+                <p>FLETE</p>
+                <img src="imagen/flete.jpg" height="140" title="Flete">
+            </div> 
+    
+            <div>
+                <p>VENTA</p>
+                <img src="imagen/venta.jpg" height="180">
+            </div> 
+        </article>           
+        <article class="publicidad">
+            <img src="imagen/publicidad.jpg" >
+        </article>
+    </section>
+    <hr>
+    <footer class="piePagina">
+        <a href="mailto:JCARRASCOH.isise.edu.pe">CONTACTAME AQUI</a>
+        <center><p>Derechos reservados &copy; 2022; Jerson Carrasco</p></center>   
     </footer>
 </body>
 </html>

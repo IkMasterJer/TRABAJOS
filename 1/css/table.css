@@ -1,0 +1,32 @@
+.tabla1{
+    background-color: aqua;
+    border: 1px solid black;
+    width:max-content;
+    overflow: hidden;
+}
+.tablaa{
+    background-color: brown;
+    border: 1px solid rgb(204, 0, 0);
+    width:max-content;
+    overflow: hidden;
+}
+
+.tabla2{
+    background-color: rgb(245, 70, 172);
+    border: 1px solid rgb(150, 170, 138);
+    width:max-content;
+    overflow: hidden;
+}
+.tabla{
+    background-color: rgb(62, 253, 196);
+    border: 1px solid rgb(198, 218, 22);
+    width:max-content;
+    overflow: hidden;
+}
+
+th{
+    background-color: rgb(78, 78, 78);
+}
+td{
+    background-color: rgb(34, 121, 121);
+}
