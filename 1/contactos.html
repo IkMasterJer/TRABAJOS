@@ -1,12 +1,75 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>CONTACTOS</h1>
+    <header class="cabezera">
+        <nav class="menu">
+            <ul>  
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="libros.html">LIBROS</a></li>
+                <li><a href="contactos.html">CONTACTOS</a></li>
+            </ul>
+        </nav>
+        <article class="bienvenida">
+            <P>Contactanos </P>
+        </article>    
+    </header>
+    <main>
+        <section class="formulario">
+            <form action="/formulario" method="post" >
+                <label for="nombre">NOMBRE: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                <br>
+                <label for="apelli">APELLIDO: </label>
+                <input type="text" name="apellido" id="apelli" placeholder="Ingrese su apellido">
+                <br>
+                <label for="correo">Correo Electronico: </label>
+                <input type="email" name="email" id="correo" placeholder="Ingrese su correo">
+                <br>
+                <label for="comen">Ingrese un comentario: </label>
+                <textarea name="comentario" id="comen" cols="30" rows="10" placeholder="Comentario"></textarea>
+                <br>
+                <input type="submit" value="ENVIAR">
+            </form>
+        </section>
+        <aside>
+            <a href="https://facebook.com/" target="_blank">
+                <div class = "icon">
+                    <div class="fab fa-facebook-square">Facebook</div>
+                </div>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <div class = "icon">
+                    <span style="padding-left:10px;"></span>
+                    <div class="fab fa-twitter-square">Twitter</div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <div class="icon">
+                    <span style="padding-left:10px;"></span>
+                    <div class="fab fa-linkedin">LinkedIn</div>
+                </div>
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <div class = "icon">
+                    <span style="padding-left:10px;"></span>
+                <div class="fab fa-github">Github</div>
+                </div>
+            </a>
+        </aside>
+
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
