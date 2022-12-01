@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 p, a, li, h1, h3{
 	font-family: 'Open Sans', sans-serif;
@@ -87,7 +92,7 @@ body{
 .bienvenida{	
 	background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
 	padding: 20px;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: bolder;	
 }
 .bienvenida p{
@@ -146,7 +151,7 @@ body{
 
 .servicios{
 	color: #fff !important;
-	font-size: 4rem !important;
+	font-size: 3rem !important;
 	padding: 1.8rem;
 	background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
 }
@@ -196,4 +201,92 @@ aside{
 .imagen1 p{
 	font-weight: 300;
 }
-.
+
+
+/*FORMULARIO*/
+.formulario{
+	scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.formulario fieldset{
+    border: none; /*Quitar la linea por defecto del Formulario=form*/
+   }
+   .formulario legend{
+    text-align: center; /*Alinear Texto*/
+    font-size: 1.8rem;/*TAMAÑO LETRAS*/
+    text-transform: uppercase;/*MAYUSCULAS*/
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: yellow;
+	background-color: #333;
+	border-radius: 2rem;
+   }
+   @media (min-width: 768px) {
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: 50% 50%;/*partiendo la columna en dos*/
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+       }
+   }
+
+   .campo:nth-child(3),
+   .campo:nth-child(4){        /*si hay cuatro clases iguales, si le pones un (1)=eligira el primero de la clase*/
+      grid-column: 1 / 3;
+
+   }
+ 
+   .campo{
+    margin-bottom: 1rem;
+
+   }
+   .campo label{
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+   }
+   .campo textarea{
+    height: 19rem;/*Altura*/
+   }
+   /*Todos los Inputs tienen Borders feos*/
+   .input-text{
+    width: 66%;/*Ancho*/
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+   }
+
+   .flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+
+}
+.boton{
+    background-color: #97ABFF;/*Fondo boton*/
+    color: var(--blanco); /**Color de la LETRA del boton**/
+    padding: 1rem 3rem; /**Esto engorda el boton lo rellena con las dimensiones que tu le das**/
+    margin-top: 5.5rem; /**Esto se usa para separar el Boton del elemento Ubicacion**/
+    font-size: 2rem;  /**agranda la letra**/
+    text-decoration: none; /**quita la linea del texto del boton**/
+    text-transform: uppercase; /*pone las letras en MAYUSCULAS*/
+    font-weight: bold; /*pone lla letra mas en negrita*/
+    border-radius: 2rem; /**le da bordes REDONDOS a tu Boton**/
+    width: 90%; /*para que se agrande el boton para otros moviles*/
+    text-align: center; /*Responsibe Design*/ 
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.7s;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+.botonHov:hover{
+    background-color: #0029df; 
+    color: #fff;
+}
+.w-sm-100{
+    width: 100%;
+}

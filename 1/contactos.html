@@ -20,55 +20,41 @@
             </ul>
         </nav>
         <article class="bienvenida">
-            <P>Contactanos</P>
-            <center><img src="https://image.ondacero.es/clipping/cmsimages01/2021/06/30/1F2EF7C5-6F61-480C-99E4-C9CA53FFFBFF/98.jpg?crop=1416,797,x0,y0&width=1900&height=1069&optimize=high&format=webply" width="200" style="border-radius: 300px;"></center>
-        </article>    
-    </header>
-    <main>
-        <section class="formulario">
-            <form action="/formulario" method="post" >
-                <label for="nombre">NOMBRE: </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-                <br>
-                <label for="apelli">APELLIDO: </label>
-                <input type="text" name="apellido" id="apelli" placeholder="Ingrese su apellido">
-                <br>
-                <label for="correo">Correo Electronico: </label>
-                <input type="email" name="email" id="correo" placeholder="Ingrese su correo">
-                <br>
-                <label for="comen">Ingrese un comentario: </label>
-                <textarea name="comentario" id="comen" cols="30" rows="10" placeholder="Comentario"></textarea>
-                <br>
-                <input type="submit" value="ENVIAR">
-            </form>
-        </section>
-        <aside>
-            <a href="https://facebook.com/" target="_blank">
-                <div class = "icon">
-                    <div class="fab fa-facebook-square">Facebook</div>
-                </div>
-            </a>
-            <a href="https://twitter.com/" target="_blank">
-                <div class = "icon">
-                    <span style="padding-left:10px;"></span>
-                    <div class="fab fa-twitter-square">Twitter</div>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank">
-                <div class="icon">
-                    <span style="padding-left:10px;"></span>
-                    <div class="fab fa-linkedin">LinkedIn</div>
-                </div>
-            </a>
-            <a href="https://github.com/" target="_blank">
-                <div class = "icon">
-                    <span style="padding-left:10px;"></span>
-                <div class="fab fa-github">Github</div>
-                </div>
-            </a>
-        </aside>
+            <section>
+                <h2>Contacto</h2>
+              
+                <form class="formulario">
+                  <fieldset>
+                      <legend>Contactame llenando todos los campos</legend>
+                    <div class="contenedor-campos">
+                      <div class="campo">
+                      <label>Nombre</label>
+                      <input class="input-text" type="text" placeholder="Nombre Completo">
+                  </div>
+              
+                      <div class="campo">
+                      <label>Teléfono</label>
+                      <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                  </div>
+              
+                      <div class="campo">
+                      <label>Correo</label>
+                         <input class="input-text" type="email" placeholder="Tu Email">
+                  </div>
+                      
+                  <div class="campo">
+                      <label>Mensaje</label>
+                      <textarea class="input-text"></textarea>
+                  </div>
+                </div><!--este es el contenedor de los campos--> 
 
-    </main>
+                <div class="alinear-derecha flex">
+                    <input class="boton botonHov w-sm-100" type="submit" value="Enviar">
+                </div>
+            
+
+            </section>
+        </article>
     <footer>
         
     </footer>
