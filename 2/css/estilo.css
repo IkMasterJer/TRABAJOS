@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 80rem;
+}
+.cabezera{
+    background-color: rgb(81, 81, 212);
+    height: 100px;
+}
+.menu{
+    background: plum;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    left: 20px;
+    top: 0px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 30px;
+    background: salmon;
+}
+.menu a:hover{
+    background: brown;
+}
+.cuerpo{
+    background-color: rgb(90, 207, 168);
+    height: 95%;
+}
+.libros{
+    float: left;
+    background: red;
+    height: 50%;
+    width: 50%;
+}
+aside{
+    background-color: blue;
+	float: right;
+    top: 0px;
+    width: 50%;
+    height: 50%;
+}
+.piePagina{
+	background: #333; 
+	color: #ffffff;
+	text-align: center;
+	padding: 5px;
+	font-size: 14px;
+    height: 5%;
+}
+.piePagina a{
+    background-color: rgb(77, 72, 82);
+    border-radius: 30px;
+}
+.piePagina a:hover{
+    background-color: rgb(207, 200, 214);
+
+}
+.l1 {
+    background-color: aquamarine;
+    height: 35% ;
+}
+.l2 {
+    background-color: rgb(71, 107, 95);
+    height: 35%;
+}
+.l3 {
+    background-color: rgb(61, 83, 76);
+    height: 30%;
+}
+
+
